@@ -1,0 +1,536 @@
+Index: static/css/lprweb.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.lpr {\r\n    padding-top: 40px;\r\n    width: 1180px;\r\n    margin: 0 auto;\r\n}\r\n\r\n.lpr:last-child {\r\n    margin-bottom: 40px;\r\n}\r\n\r\n.lpr-header {\r\n    line-height: 46px;\r\n    font-size: 30px;\r\n    color: #000;\r\n    letter-spacing: 0;\r\n    text-align: center;\r\n}\r\n\r\n.lpr-cnt {\r\n    margin-top: 40px;\r\n    position: relative;\r\n    width: 100%;\r\n    height: 524px;\r\n}\r\n\r\n.lpr-canvas {\r\n    position: relative;\r\n    width: 840px;\r\n    height: 100%;\r\n    float: left;\r\n    background: #343434;\r\n}\r\n\r\n.image-input {\r\n    position: absolute;\r\n    left: 0;\r\n    bottom: 0;\r\n    width: 100%;\r\n    height: 90px;\r\n    padding: 20px 10px;\r\n    box-sizing: border-box;\r\n    z-index: 9;\r\n    background: rgba(0, 0, 0, .5);\r\n}\r\n\r\n.image-input .image-container {\r\n    position: relative;\r\n    width: 100%;\r\n    height: 46px;\r\n    font-size: 0;\r\n}\r\n\r\n.image-input .image-container .image-local {\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    width: 140px;\r\n    height: 46px;\r\n    font-size: 20px;\r\n    line-height: 46px;\r\n    box-sizing: border-box;\r\n    outline: none;\r\n    text-align: center;\r\n    color: #fff;\r\n    background-color: #0073eb;\r\n    border: none;\r\n    cursor: pointer;\r\n}\r\n\r\n.image-input .image-container .image-local-input {\r\n    width: 100%;\r\n    height: 100%;\r\n    display: none;\r\n}\r\n\r\n\r\n.image-input .image-container .image-text {\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    margin: 0 30px;\r\n    font-size: 14px;\r\n    color: #ccc;\r\n    line-height: 46px;\r\n    background: transparent;\r\n    border: none;\r\n}\r\n\r\n.canvas-centerlize {\r\n    position: absolute;\r\n    left: 50%;\r\n    top: 50%;\r\n    transform-origin: center;\r\n}\r\n\r\n.result {\r\n    float: left;\r\n    width: 340px;\r\n    height: 100%;\r\n    word-wrap: break-word;\r\n    word-break: break-all;\r\n    background-color: #fafafa;\r\n    overflow: hidden;\r\n    box-sizing: border-box;\r\n    padding-top: 50px;\r\n}\r\n\r\n.result-title {\r\n    box-sizing: border-box;\r\n    margin-top: -50px;\r\n    border-top: 1px solid #e1e1e1;\r\n    height: 50px;\r\n    line-height: 50px;\r\n    padding-left: 20px;\r\n    font-size: 16px;\r\n    position: relative;\r\n}\r\n\r\n.result-cnt {\r\n    box-sizing: border-box;\r\n    padding-left: 20px;\r\n    overflow-y: auto;\r\n    transition: all .3s ease-in-out;\r\n}\r\n\r\n.result-item {\r\n    list-style: none;\r\n    padding: 0;\r\n    position: relative;\r\n    margin: 0 0 14px;\r\n    overflow: hidden;\r\n}\r\n\r\n.result-item-title {\r\n    display: inline-block;\r\n    vertical-align: top;\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    color: #666;\r\n    text-align: left;\r\n}\r\n\r\n.result-item-text {\r\n    display: inline-block;\r\n    vertical-align: top;\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    color: #333;\r\n    text-align: left;\r\n}\r\n\r\n.result-num {\r\n    width: 42px;\r\n    display: inline-block;\r\n    vertical-align: top;\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    color: #333;\r\n    text-align: left;\r\n}\r\n\r\n.result-text {\r\n    width: 238px;\r\n    display: inline-block;\r\n    vertical-align: top;\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    color: #333;\r\n    text-align: left;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/static/css/lprweb.css b/static/css/lprweb.css
+--- a/static/css/lprweb.css	(revision e05a1303bb14b40f8fca111f6652f8bae3b32012)
++++ b/static/css/lprweb.css	(date 1735138823231)
+@@ -14,6 +14,7 @@
+     color: #000;
+     letter-spacing: 0;
+     text-align: center;
++    box-shadow: #333399;
+ }
+ 
+ .lpr-cnt {
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>## 启动\r\n### 网页后添加/lprweb 访问\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	(revision e05a1303bb14b40f8fca111f6652f8bae3b32012)
++++ b/README.md	(date 1735140042630)
+@@ -1,2 +1,8 @@
+-## 启动
+-### 网页后添加/lprweb 访问
++# 使用步骤
++
++## 点击main.py运行即可
++
++## 未完全实现，成功率仅有20%，识别正确率45%
++
++## 需要tensorflow
++## python 3.8以上
+\ No newline at end of file
+Index: lprweb.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lprweb.py b/main.py
+rename from lprweb.py
+rename to main.py
+--- a/lprweb.py	(revision e05a1303bb14b40f8fca111f6652f8bae3b32012)
++++ b/main.py	(date 1735139950563)
+@@ -15,13 +15,13 @@
+ scan_dir = './static/images/scan.jpg'
+ 
+ 
+-@sever.route("/lprweb", methods=["GET", "POST"])
++@sever.route("/", methods=["GET", "POST"])
+ def upload():
+     if request.method == "GET":
+-        return render_template('lprweb.html',
++        return render_template('index.html',
+                                img_url=url_for(
+-                                   'static', filename='images/example.jpg'),
+-                               plates=['京A82806'],
++                                   'static', filename='images/background.jpg'),
++                               plates=[' '],
+                                plates_num=1,
+                                )
+     elif request.method == "POST":
+@@ -40,15 +40,15 @@
+             copyfile(file_dir, scan_dir)
+ 
+             result = scan_image(scan_dir)
+-            return render_template('lprweb.html',
++            return render_template('index.html',
+                                    img_url=url_for(
+                                        'static', filename='images/scan.jpg'),
+                                    plates=result,
+                                    plates_num=len(result),
+                                    )
+         else:   # 如果文件为空
+-            res = {"msg": "没有上传文件"}
+-            return json.dumps(res, ensure_ascii=False)  # 防止出现乱码
++            res = {"msg": "未上传文件"}
++            return json.dumps(res, ensure_ascii=False)  # 防乱码
+ 
+ 
+ def scan_image(file_path):
+Index: templates/lprweb.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/templates/lprweb.html b/templates/index.html
+rename from templates/lprweb.html
+rename to templates/index.html
+--- a/templates/lprweb.html	(revision e05a1303bb14b40f8fca111f6652f8bae3b32012)
++++ b/templates/index.html	(date 1735140100073)
+@@ -2,16 +2,14 @@
+ <html lang="zh-cmn-Hans-CN">
+ 
+ <head>
+-    <title>车牌识别</title>
++    <title>title</title>
+ 
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+-    <meta name="keywords" content="车牌识别,车牌识别系统,车辆识别系统,车牌号识别">
+-    <meta name="description" content="Python车牌识别系统">
+     <meta name="viewport" content="width=1240">
+ 
+-    <link rel="shortcut icon" href="{{ url_for('static',filename='images/webico.ico') }}">
++<!--    <link rel="shortcut icon" href="{{ url_for('static',filename='images/webico.ico') }}">-->
+     <link rel="stylesheet" href="{{ url_for('static',filename='css/lprweb.css') }}">
+     <!--
+     <style type="text/css">
+@@ -27,41 +25,21 @@
+ </head>
+ 
+ <body>
+-    <div class="lpr" linknav="true">
+-        <div class="lpr-header">
+-            Python车牌识别系统
++    <div class="lpr" linknav="true" style="border: 3px solid skyblue">
++        <div class="lpr-header" >
++            车牌识别
+         </div>
+         <div class="lpr-cnt">
+-            <!--图片输入-->
+-            <div class="lpr-canvas">
+-                <img id="image-preview" width="100%" height="100%" src="{{img_url}}">
+-                <div class="image-input">
+-                    <div class="image-container">
+-                        <form action="http://127.0.0.1:8888/lprweb" method="post" enctype="multipart/form-data"
+-                            id="file_upload" style="float:left">
+-                            <label class="image-local">
+-                                <input type="file" class="image-local-input" id="upload_image" name="upload_image"
+-                                    accept="image/png, image/bmp, image/jpg, image/jpeg">
+-                                本地上传
+-                            </label>
+-                        </form>
+-                        <div class="image-text">图片类型支持PNG、BMP、JPG、JPEG。</div>
+-                    </div>
+-                </div>
+-                <canvas class="canvas-centerlize" width="1680" height="1048"
+-                    style="transform: translate(-50%, -50%) scale(0.5);">
+-                </canvas>
+-            </div>
+             <!--结果输出-->
+             <div class="result">
+                 <div class="result-title">
+-                    识别结果
++                    结果
+                 </div>
+                 <div class="result-cnt" style="height: 504px; opacity: 1;">
+                     <ul class="result-item">
+                         <li class="result-item-title">
+                             <span class="result-num">序号</span>
+-                            <span class="result-text">内容</span>
++                            <span class="result-text">车牌</span>
+                         </li>
+                         {% for i in range(plates_num) %}
+                         <li class="result-item-text">
+@@ -74,6 +52,26 @@
+                     </ul>
+                 </div>
+             </div>
++            <!--图片输入-->
++            <div class="lpr-canvas">
++                <img id="image-preview" width="100%" height="100%" src="{{img_url}}">
++                <div class="image-input">
++                    <div class="image-container">
++                        <form action="http://127.0.0.1:8888" method="post" enctype="multipart/form-data"
++                            id="file_upload" style="float:left">
++                            <label class="image-local">
++                                <input type="file" class="image-local-input" id="upload_image" name="upload_image"
++                                    accept="image/png, image/bmp, image/jpg, image/jpeg">
++                                点击上传
++                            </label>
++                        </form>
++                        <div class="image-text"></div>
++                    </div>
++                </div>
++                <canvas class="canvas-centerlize" width="1680" height="1048"
++                    style="transform: translate(-50%, -50%) scale(0.5);">
++                </canvas>
++            </div>
+         </div>
+     </div>
+ </body>
+@@ -86,13 +84,13 @@
+     // 监听change事件:
+     fileInput.addEventListener('change', function () {
+         if (!fileInput.value) {
+-            info.innerHTML = '没有选择文件';
++            info.innerHTML = '未选择文件';
+             return;
+         }
+         let file = fileInput.files[0];
+         // 获取File信息:
+         if (!['image/jpeg', 'image/png', 'image/bmp', 'image/jpg'].includes(file.type)) {
+-            alert('不是有效的图片文件!');
++            alert('非有效文件，请重新上传！');
+             return;
+         }
+         // 读取文件:
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.9 (base)\" project-jdk-type=\"Python SDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision e05a1303bb14b40f8fca111f6652f8bae3b32012)
++++ b/.idea/misc.xml	(date 1735138052207)
+@@ -1,4 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (base)" project-jdk-type="Python SDK" />
++  <component name="Black">
++    <option name="sdkName" value="Python 3.12" />
++  </component>
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+new file mode 100644
+--- /dev/null	(date 1735140124589)
++++ b/.idea/workspace.xml	(date 1735140124589)
+@@ -0,0 +1,299 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
++  <component name="ChangeListManager">
++    <list default="true" id="4d475efb-c314-41f4-a68a-8c05b41eacbc" name="更改" comment="2024年12月25日22:41:37">
++      <change afterPath="$PROJECT_DIR$/cars/1020241225231734.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/cars/12024121818561920241225231850.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/cars/22024121818581120241225231750.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/cars/22024122420165620241225231956.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/cars/62024122420182920241225232052.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/cars/plate220241225231741.jpg" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/lprweb.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/static/images/scan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/scan.jpg" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/temp/plate0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/temp/plate0.jpg" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/temp/plate0_0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/temp/plate0_0.jpg" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/temp/plate0_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/temp/plate0_1.jpg" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/temp/plate0_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/temp/plate0_2.jpg" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/temp/plate0_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/temp/plate0_3.jpg" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/temp/plate0_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/temp/plate0_4.jpg" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/temp/plate0_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/temp/plate0_5.jpg" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/lprweb.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
++    </list>
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="HTML File" />
++      </list>
++    </option>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
++  <component name="ProjectColorInfo"><![CDATA[{
++  "associatedIndex": 3
++}]]></component>
++  <component name="ProjectId" id="2qiFn1MkmNCADQqzkoya7luYVO6" />
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "DefaultHtmlFileTemplate": "HTML File",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "WebServerToolWindowFactoryState": "false",
++    "git-widget-placeholder": "main",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "vue.rearranger.settings.migration": "true"
++  }
++}]]></component>
++  <component name="RunManager">
++    <configuration default="true" type="DjangoTestsConfigurationType">
++      <module name="Digital-Processing" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
++      <option name="TARGET" value="" />
++      <option name="SETTINGS_FILE" value="" />
++      <option name="CUSTOM_SETTINGS" value="false" />
++      <option name="USE_OPTIONS" value="false" />
++      <option name="OPTIONS" value="" />
++      <method v="2" />
++    </configuration>
++    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
++      <module name="Digital-Processing" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
++      <option name="ADDITIONAL_ARGS" value="" />
++      <method v="2" />
++    </configuration>
++    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
++      <module name="Digital-Processing" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
++      <option name="SCRIPT_NAME" value="" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <option name="EMULATE_TERMINAL" value="false" />
++      <option name="MODULE_MODE" value="false" />
++      <option name="REDIRECT_INPUT" value="false" />
++      <option name="INPUT_FILE" value="" />
++      <method v="2" />
++    </configuration>
++    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
++      <module name="Digital-Processing" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="SDK_NAME" value="Python 3.12" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
++      <option name="SCRIPT_NAME" value="E:\Doc\DocOFSchool\5th\Digital picture processing\recognition\main.py" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <option name="EMULATE_TERMINAL" value="false" />
++      <option name="MODULE_MODE" value="false" />
++      <option name="REDIRECT_INPUT" value="false" />
++      <option name="INPUT_FILE" value="" />
++      <method v="2" />
++    </configuration>
++    <configuration default="true" type="Python.FlaskServer">
++      <module name="Digital-Processing" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
++      <option name="launchJavascriptDebuger" value="false" />
++      <method v="2" />
++    </configuration>
++    <configuration default="true" type="Tox" factoryName="Tox">
++      <module name="Digital-Processing" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
++      <method v="2" />
++    </configuration>
++    <configuration default="true" type="docs" factoryName="Docutils task">
++      <module name="Digital-Processing" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
++      <option name="docutils_input_file" value="" />
++      <option name="docutils_output_file" value="" />
++      <option name="docutils_params" value="" />
++      <option name="docutils_task" value="" />
++      <option name="docutils_open_in_browser" value="false" />
++      <method v="2" />
++    </configuration>
++    <configuration default="true" type="docs" factoryName="Sphinx task">
++      <module name="Digital-Processing" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
++      <option name="docutils_input_file" value="" />
++      <option name="docutils_output_file" value="" />
++      <option name="docutils_params" value="" />
++      <option name="docutils_task" value="" />
++      <option name="docutils_open_in_browser" value="false" />
++      <method v="2" />
++    </configuration>
++    <configuration default="true" type="tests" factoryName="Autodetect">
++      <module name="Digital-Processing" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
++      <option name="_new_additionalArguments" value="&quot;&quot;" />
++      <option name="_new_target" value="&quot;&quot;" />
++      <option name="_new_targetType" value="&quot;PATH&quot;" />
++      <method v="2" />
++    </configuration>
++    <configuration default="true" type="tests" factoryName="Doctests">
++      <module name="Digital-Processing" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
++      <option name="SCRIPT_NAME" value="" />
++      <option name="CLASS_NAME" value="" />
++      <option name="METHOD_NAME" value="" />
++      <option name="FOLDER_NAME" value="" />
++      <option name="TEST_TYPE" value="TEST_SCRIPT" />
++      <option name="PATTERN" value="" />
++      <option name="USE_PATTERN" value="false" />
++      <method v="2" />
++    </configuration>
++  </component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="默认任务">
++      <changelist id="4d475efb-c314-41f4-a68a-8c05b41eacbc" name="更改" comment="" />
++      <created>1735137651789</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1735137651789</updated>
++      <workItem from="1735137654235" duration="2457000" />
++    </task>
++    <task id="LOCAL-00001" summary="2024年12月25日22:41:37">
++      <option name="closed" value="true" />
++      <created>1735137709340</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1735137709340</updated>
++    </task>
++    <task id="LOCAL-00002" summary="2024年12月25日22:41:37">
++      <option name="closed" value="true" />
++      <created>1735139328464</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1735139328464</updated>
++    </task>
++    <task id="LOCAL-00003" summary="2024年12月25日22:41:37">
++      <option name="closed" value="true" />
++      <created>1735140121463</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1735140121463</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
++    <servers />
++  </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="3" />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="2024年12月25日22:41:37" />
++    <option name="LAST_COMMIT_MESSAGE" value="2024年12月25日22:41:37" />
++  </component>
++  <component name="com.intellij.coverage.CoverageDataManagerImpl">
++    <SUITE FILE_PATH="coverage/Digital_Processing$lprweb.coverage" NAME="main 覆盖结果" MODIFIED="1735139982217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
++  </component>
++</project>
+\ No newline at end of file
