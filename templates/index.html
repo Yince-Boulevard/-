@@ -2,16 +2,16 @@
 <html lang="zh-cmn-Hans-CN">
 
 <head>
-    <title>车牌识别</title>
+    <title>title</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta name="keywords" content="车牌识别,车牌识别系统,车辆识别系统,车牌号识别">
-    <meta name="description" content="Python车牌识别系统">
+<!--    <meta name="keywords" content="车牌识别,车牌识别系统,车辆识别系统,车牌号识别">-->
+<!--    <meta name="description" content="Python车牌识别系统">-->
     <meta name="viewport" content="width=1240">
 
-    <link rel="shortcut icon" href="{{ url_for('static',filename='images/webico.ico') }}">
+<!--    <link rel="shortcut icon" href="{{ url_for('static',filename='images/webico.ico') }}">-->
     <link rel="stylesheet" href="{{ url_for('static',filename='css/lprweb.css') }}">
     <!--
     <style type="text/css">
@@ -27,32 +27,12 @@
 </head>
 
 <body>
-    <div class="lpr" linknav="true">
-        <div class="lpr-header">
-            Python车牌识别系统
+    <div class="lpr" linknav="true" style="border: 3px solid #0073eb">
+        <div class="lpr-header" style="border-bottom: 1px solid black">
+            车牌识别
         </div>
         <div class="lpr-cnt">
-            <!--图片输入-->
-            <div class="lpr-canvas">
-                <img id="image-preview" width="100%" height="100%" src="{{img_url}}">
-                <div class="image-input">
-                    <div class="image-container">
-                        <form action="http://127.0.0.1:8888/lprweb" method="post" enctype="multipart/form-data"
-                            id="file_upload" style="float:left">
-                            <label class="image-local">
-                                <input type="file" class="image-local-input" id="upload_image" name="upload_image"
-                                    accept="image/png, image/bmp, image/jpg, image/jpeg">
-                                本地上传
-                            </label>
-                        </form>
-                        <div class="image-text">图片类型支持PNG、BMP、JPG、JPEG。</div>
-                    </div>
-                </div>
-                <canvas class="canvas-centerlize" width="1680" height="1048"
-                    style="transform: translate(-50%, -50%) scale(0.5);">
-                </canvas>
-            </div>
-            <!--结果输出-->
+                        <!--结果输出-->
             <div class="result">
                 <div class="result-title">
                     识别结果
@@ -74,6 +54,27 @@
                     </ul>
                 </div>
             </div>
+            <!--图片输入-->
+            <div class="lpr-canvas">
+                <img id="image-preview" width="100%" height="100%" src="{{img_url}}">
+                <div class="image-input">
+                    <div class="image-container">
+                        <form action="http://127.0.0.1:8888/" method="post" enctype="multipart/form-data"
+                            id="file_upload" style="float:left">
+                            <label class="image-local">
+                                <input type="file" class="image-local-input" id="upload_image" name="upload_image"
+                                    accept="image/png, image/bmp, image/jpg, image/jpeg">
+                                本地上传
+                            </label>
+                        </form>
+                        <div class="image-text">图片类型支持PNG、BMP、JPG、JPEG。</div>
+                    </div>
+                </div>
+                <canvas class="canvas-centerlize" width="1680" height="1048"
+                    style="transform: translate(-50%, -50%) scale(0.5);">
+                </canvas>
+            </div>
+
         </div>
     </div>
 </body>

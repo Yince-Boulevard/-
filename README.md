@@ -1,2 +1,5 @@
 ## 启动
-### 网页后添加/lprweb 访问
+### 选择main.py运行即可
+
+需要 python3.8及以上
+需要 tensorflow库

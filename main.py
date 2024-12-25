@@ -15,13 +15,13 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 scan_dir = './static/images/scan.jpg'
 
 
-@sever.route("/lprweb", methods=["GET", "POST"])
+@sever.route("/", methods=["GET", "POST"])
 def upload():
     if request.method == "GET":
-        return render_template('lprweb.html',
+        return render_template('index.html',
                                img_url=url_for(
-                                   'static', filename='images/example.jpg'),
-                               plates=['京A82806'],
+                                   'static', filename='images/background.jpg'),
+                               plates=[''],
                                plates_num=1,
                                )
     elif request.method == "POST":
@@ -40,7 +40,7 @@ def upload():
             copyfile(file_dir, scan_dir)
 
             result = scan_image(scan_dir)
-            return render_template('lprweb.html',
+            return render_template('index.html',
                                    img_url=url_for(
                                        'static', filename='images/scan.jpg'),
                                    plates=result,
