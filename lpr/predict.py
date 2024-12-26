@@ -4,7 +4,6 @@ import tensorflow as tf
 
 from tensorflow.keras import models
 
-
 CH_IMAGE_WIDTH = 24
 CH_IMAGE_HEIGHT = 48
 EN_IMAGE_WIDTH = 20

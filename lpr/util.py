@@ -3,7 +3,6 @@ import cv2 as cv
 
 # 通过面积和长宽比来判断车牌是否有效
 
-
 def verify_plate_sizes(contour):
     (center_x, center_y), (w, h), angle = cv.minAreaRect(contour)
     w = int(w)

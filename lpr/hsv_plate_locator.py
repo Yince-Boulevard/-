@@ -7,7 +7,6 @@ HSV_MAX_BLUE_H = 140  # HSV中蓝色分量最大范围值
 MAX_SV = 250
 MIN_SV = 95
 
-
 def locate(image):
     plate_image=image
     # 平滑
@@ -59,5 +58,4 @@ if __name__ == "__main__":
 
     plates_image = locate(image)
 
-    #for i in np.arange(len(plates_image)):
-    #    cv.imwrite('./temp/'+'%s' % i + '.jpg', plates_image[i])
+

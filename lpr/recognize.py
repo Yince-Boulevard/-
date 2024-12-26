@@ -2,8 +2,6 @@ import cv2 as cv
 
 from lpr import predict,segmentation, hsv_plate_locator
 #import predict
-#import segmentation
-#import hsv_plate_locator
 
 
 def recognize(image):
