@@ -60,8 +60,8 @@
     box-sizing: border-box;
     outline: none;
     text-align: center;
-    color: #fff;
-    background-color: #0073eb;
+    color: #0073eb;
+    background-color: #fff;
     border: none;
     cursor: pointer;
 }
