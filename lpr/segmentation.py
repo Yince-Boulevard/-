@@ -148,7 +148,6 @@ class Segmentation():
             output.append(self.char_split(b_img, off_img))
         return output
 
-
 if __name__ == '__main__':
     split = Segmentation()
     splited_chars = split.segment()

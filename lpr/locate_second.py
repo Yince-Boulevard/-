@@ -191,7 +191,6 @@ if __name__ == '__main__':
         cv.waitKey()
 
     cv.destroyAllWindows()
-
     split = Segmentation()
     split.binary_show(plates)
     splited_chars = split.segment(plates)

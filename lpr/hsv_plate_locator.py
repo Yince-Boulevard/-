@@ -59,5 +59,4 @@ if __name__ == "__main__":
 
     plates_image = locate(image)
 
-    #for i in np.arange(len(plates_image)):
-    #    cv.imwrite('./temp/'+'%s' % i + '.jpg', plates_image[i])
+
